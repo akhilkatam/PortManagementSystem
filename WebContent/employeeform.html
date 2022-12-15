@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Register Employee</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script>
+		 function disableSubmit() {
+		  document.getElementById("submit").disabled = true;
+		 }
+		
+		  function activateButton(element) {
+		
+		      if(element.checked) {
+		        document.getElementById("submit").disabled = false;
+		       }
+		       else  {
+		        document.getElementById("submit").disabled = true;
+		      }
+
+  }
+</script>
+	</head>
+	<body class="subpage" onload="disableSubmit()">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo">TRANS<font color="yellow">PORT</font><span>     Register Employee</span></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="generic.html">Generic</a></li>
+					<li><a href="elements.html">Elements</a></li>
+				</ul>
+			</nav>
+
+		<!-- One -->
+			<section id="One" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p>Choose one</p>
+						<h2>Online Services</h2>
+					</header>
+				</div>
+			</section>
+
+		<!-- Main -->
+							
+							<section id="two" class="wrapper style2">
+							<div class="inner">
+					<div class="box">
+						<div class="content">
+								<h2>Enter Details</h2>
+
+								<form method="GET" action="RgisteringEmployee">
+									<div class="row uniform">
+										<div class="6u$">
+											<input type="text" name="ename" id="name" value="" placeholder="Employee Name" />
+										</div>
+										<div class="6u$">
+											<input type="text" name="eid" id="name" value="" placeholder="Employee ID" />
+										</div>
+										<br>
+										<div class="6u$">
+											<input type="text" name="desig" id="design" value="" placeholder="Designation" />
+										</div>
+										<br>
+										<div class="6u$">
+										<input type="text" name="berth" id="bid" value="" placeholder="Berth ID" />
+										</div>
+										<br>
+										<div class="6u$">
+											<input type="text" name="sal" id="salary" value="" placeholder="Salary" />
+										</div>
+										<br>
+										<div class="6u$">
+											<input type="text" name="sid" id="sid" value="" placeholder="Supervisor ID" />
+										</div>
+										<div class="6u$">
+											<input type="password" name="password" id="pass" value="" placeholder="Password" />
+										</div>
+									  
+										<div class="12u$ 12u$(small)">
+											<input type="checkbox" id="terms" name="terms" onchange="activateButton(this)">
+											<label for="terms">I solemnly swear that the entered details are true to the best of my knowledge.</label>
+										</div>
+										<div class="12u$">
+											<ul class="actions">
+												<li><input type="submit" value="submit" id="submit"/></li>
+												<li><input type="reset" value="Reset" class="alt" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+								</div>
+								</div>
+								</div>
+								</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
